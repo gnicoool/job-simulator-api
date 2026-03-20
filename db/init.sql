@@ -3,12 +3,12 @@ CREATE TABLE songs (
     song TEXT,
     artist TEXT,
     album TEXT,
-    year_realise integer,
+    year_release integer,
     duration_sec float,
     grammy boolean
 );
 
-INSERT INTO songs (song, artist, album, year_realise, duration_sec, grammy) 
+INSERT INTO songs (song, artist, album, year_release, duration_sec, grammy) 
 VALUES 
     ('Bohemian Rhapsody', 'Queen', 'A Night at the Opera', 1975, 354.5, true),
     ('Shape of You', 'Ed Sheeran', '÷', 2017, 233.8, false),

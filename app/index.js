@@ -68,7 +68,6 @@ app.get('/songs/:id', async (req, res) => {
 });
 
 
-// 🟢 CREATE (POST)
 app.post('/songs', async (req, res) => {
   const { campo1, campo2, campo3, campo4, campo5, campo6 } = req.body;
 
@@ -89,7 +88,6 @@ app.post('/songs', async (req, res) => {
 });
 
 
-// 🟢 UPDATE (PUT)
 app.put('/songs/:id', async (req, res) => {
   const { id } = req.params;
   const { campo1, campo2, campo3, campo4, campo5, campo6 } = req.body;
