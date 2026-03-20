@@ -29,9 +29,9 @@ app.listen(process.env.APP_PORT, () => {
   console.log('Servidor listo');
 });
 
-app.get('/users', async (req, res) => {
+app.get('/songs', async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM users');
+    const result = await pool.query('SELECT * FROM songs');
     res.json(result.rows);
   } catch (error) {
     res.status(500).json({ error: 'Error DB' });
